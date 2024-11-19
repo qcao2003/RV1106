@@ -1,0 +1,1 @@
+/home/ubuntu2402/RV1106/luckfox-pico/tools/linux/toolchain/arm-rockchip830-linux-uclibcgnueabihf/bin/arm-rockchip830-linux-uclibcgnueabihf-gcc CMakeFiles/uselib.dir/main.c.o -o /home/ubuntu2402/RV1106/test_for_cmake_uselib/bin/uselib  -Wl,-rpath,/home/ubuntu2402/RV1106/test_for_cmake_uselib/lib /home/ubuntu2402/RV1106/test_for_cmake_uselib/lib/libfunc.so 

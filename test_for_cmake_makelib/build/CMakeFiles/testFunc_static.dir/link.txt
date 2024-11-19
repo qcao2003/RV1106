@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/ubuntu2402/RV1106/test_for_cmake_makelib/lib/libfunc.a CMakeFiles/testFunc_static.dir/test_func/func.c.o
+/usr/bin/ranlib /home/ubuntu2402/RV1106/test_for_cmake_makelib/lib/libfunc.a

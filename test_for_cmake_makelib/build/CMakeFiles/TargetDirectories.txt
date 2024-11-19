@@ -1,0 +1,4 @@
+/home/ubuntu2402/RV1106/test_for_cmake_makelib/build/CMakeFiles/testFunc_shared.dir
+/home/ubuntu2402/RV1106/test_for_cmake_makelib/build/CMakeFiles/testFunc_static.dir
+/home/ubuntu2402/RV1106/test_for_cmake_makelib/build/CMakeFiles/edit_cache.dir
+/home/ubuntu2402/RV1106/test_for_cmake_makelib/build/CMakeFiles/rebuild_cache.dir

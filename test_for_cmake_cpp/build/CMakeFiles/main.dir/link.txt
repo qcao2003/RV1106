@@ -1,0 +1,1 @@
+/home/ubuntu2402/RV1106/luckfox-pico/tools/linux/toolchain/arm-rockchip830-linux-uclibcgnueabihf/bin/arm-rockchip830-linux-uclibcgnueabihf-g++ CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/test_func/func.cpp.o -o main 

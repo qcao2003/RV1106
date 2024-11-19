@@ -1,0 +1,1 @@
+/home/ubuntu2402/RV1106/luckfox-pico/tools/linux/toolchain/arm-rockchip830-linux-uclibcgnueabihf/bin/arm-rockchip830-linux-uclibcgnueabihf-gcc CMakeFiles/fb0_cmake.dir/fb0.c.o CMakeFiles/fb0_cmake.dir/include/draw.c.o -o fb0_cmake 
