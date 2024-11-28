@@ -1,0 +1,1 @@
+/home/ubuntu2402/RV1106/luckfox-pico/tools/linux/toolchain/arm-rockchip830-linux-uclibcgnueabihf/bin/arm-rockchip830-linux-uclibcgnueabihf-g++ -fPIC -shared -Wl,-soname,libcmake_examples_inst.so -o libcmake_examples_inst.so CMakeFiles/cmake_examples_inst.dir/test_func/func.cpp.o 

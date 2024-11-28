@@ -1,0 +1,8 @@
+/home/ubuntu2402/RV1106/test_for_cmake_install/build/CMakeFiles/cmake_examples_inst.dir
+/home/ubuntu2402/RV1106/test_for_cmake_install/build/CMakeFiles/cmake_examples_inst_bin.dir
+/home/ubuntu2402/RV1106/test_for_cmake_install/build/CMakeFiles/edit_cache.dir
+/home/ubuntu2402/RV1106/test_for_cmake_install/build/CMakeFiles/rebuild_cache.dir
+/home/ubuntu2402/RV1106/test_for_cmake_install/build/CMakeFiles/list_install_components.dir
+/home/ubuntu2402/RV1106/test_for_cmake_install/build/CMakeFiles/install.dir
+/home/ubuntu2402/RV1106/test_for_cmake_install/build/CMakeFiles/install/local.dir
+/home/ubuntu2402/RV1106/test_for_cmake_install/build/CMakeFiles/install/strip.dir

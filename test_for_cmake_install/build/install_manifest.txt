@@ -1,0 +1,3 @@
+/home/ubuntu2402/RV1106/test_for_cmake_install/Install/bin/cmake_examples_inst_bin
+/home/ubuntu2402/RV1106/test_for_cmake_install/Install/lib/libcmake_examples_inst.so
+/home/ubuntu2402/RV1106/test_for_cmake_install/Install/etc/cmake-examples.conf

@@ -1,0 +1,6 @@
+/home/ubuntu2402/RV1106/test_for_yolov5withscrpit/yolov5/install/rv1106_linux_armv7l/rknn_yolov5_demo/./rknn_yolov5_demo
+/home/ubuntu2402/RV1106/test_for_yolov5withscrpit/yolov5/install/rv1106_linux_armv7l/rknn_yolov5_demo/./model/bus.jpg
+/home/ubuntu2402/RV1106/test_for_yolov5withscrpit/yolov5/install/rv1106_linux_armv7l/rknn_yolov5_demo/./model/coco_80_labels_list.txt
+/home/ubuntu2402/RV1106/test_for_yolov5withscrpit/yolov5/install/rv1106_linux_armv7l/rknn_yolov5_demo/model/yolov5.rknn
+/home/ubuntu2402/RV1106/test_for_yolov5withscrpit/yolov5/install/rv1106_linux_armv7l/rknn_yolov5_demo/lib/librknnmrt.so
+/home/ubuntu2402/RV1106/test_for_yolov5withscrpit/yolov5/install/rv1106_linux_armv7l/rknn_yolov5_demo/lib/librga.so
