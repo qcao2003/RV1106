@@ -43,29 +43,29 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/ubuntu2402/RV1106/test_for_cmake_install/Install/bin/cmake_examples_inst_bin" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/ubuntu2402/RV1106/test_for_cmake_install/Install/bin/cmake_examples_inst_bin")
+  if(EXISTS "$ENV{DESTDIR}/home/ubuntu2402/RV1106/test_for_cmake_install/cmake_install_test/bin/cmake_examples_inst_bin" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/ubuntu2402/RV1106/test_for_cmake_install/cmake_install_test/bin/cmake_examples_inst_bin")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/ubuntu2402/RV1106/test_for_cmake_install/Install/bin/cmake_examples_inst_bin"
-         RPATH "")
+         FILE "$ENV{DESTDIR}/home/ubuntu2402/RV1106/test_for_cmake_install/cmake_install_test/bin/cmake_examples_inst_bin"
+         RPATH "$ORIGIN/../lib")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ubuntu2402/RV1106/test_for_cmake_install/Install/bin/cmake_examples_inst_bin")
+   "/home/ubuntu2402/RV1106/test_for_cmake_install/cmake_install_test/bin/cmake_examples_inst_bin")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/ubuntu2402/RV1106/test_for_cmake_install/Install/bin" TYPE EXECUTABLE FILES "/home/ubuntu2402/RV1106/test_for_cmake_install/build/cmake_examples_inst_bin")
-  if(EXISTS "$ENV{DESTDIR}/home/ubuntu2402/RV1106/test_for_cmake_install/Install/bin/cmake_examples_inst_bin" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/ubuntu2402/RV1106/test_for_cmake_install/Install/bin/cmake_examples_inst_bin")
+  file(INSTALL DESTINATION "/home/ubuntu2402/RV1106/test_for_cmake_install/cmake_install_test/bin" TYPE EXECUTABLE FILES "/home/ubuntu2402/RV1106/test_for_cmake_install/build/cmake_examples_inst_bin")
+  if(EXISTS "$ENV{DESTDIR}/home/ubuntu2402/RV1106/test_for_cmake_install/cmake_install_test/bin/cmake_examples_inst_bin" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/ubuntu2402/RV1106/test_for_cmake_install/cmake_install_test/bin/cmake_examples_inst_bin")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}/home/ubuntu2402/RV1106/test_for_cmake_install/Install/bin/cmake_examples_inst_bin"
+         FILE "$ENV{DESTDIR}/home/ubuntu2402/RV1106/test_for_cmake_install/cmake_install_test/bin/cmake_examples_inst_bin"
          OLD_RPATH "/home/ubuntu2402/RV1106/test_for_cmake_install/build:"
-         NEW_RPATH "")
+         NEW_RPATH "$ORIGIN/../lib")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/home/ubuntu2402/RV1106/luckfox-pico/tools/linux/toolchain/arm-rockchip830-linux-uclibcgnueabihf/bin/arm-rockchip830-linux-uclibcgnueabihf-strip" "$ENV{DESTDIR}/home/ubuntu2402/RV1106/test_for_cmake_install/Install/bin/cmake_examples_inst_bin")
+      execute_process(COMMAND "/home/ubuntu2402/RV1106/luckfox-pico/tools/linux/toolchain/arm-rockchip830-linux-uclibcgnueabihf/bin/arm-rockchip830-linux-uclibcgnueabihf-strip" "$ENV{DESTDIR}/home/ubuntu2402/RV1106/test_for_cmake_install/cmake_install_test/bin/cmake_examples_inst_bin")
     endif()
   endif()
 endif()
@@ -75,25 +75,25 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/ubuntu2402/RV1106/test_for_cmake_install/Install/lib/libcmake_examples_inst.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/ubuntu2402/RV1106/test_for_cmake_install/Install/lib/libcmake_examples_inst.so")
+  if(EXISTS "$ENV{DESTDIR}/home/ubuntu2402/RV1106/test_for_cmake_install/cmake_install_test/lib/libcmake_examples_inst.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/ubuntu2402/RV1106/test_for_cmake_install/cmake_install_test/lib/libcmake_examples_inst.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/ubuntu2402/RV1106/test_for_cmake_install/Install/lib/libcmake_examples_inst.so"
+         FILE "$ENV{DESTDIR}/home/ubuntu2402/RV1106/test_for_cmake_install/cmake_install_test/lib/libcmake_examples_inst.so"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ubuntu2402/RV1106/test_for_cmake_install/Install/lib/libcmake_examples_inst.so")
+   "/home/ubuntu2402/RV1106/test_for_cmake_install/cmake_install_test/lib/libcmake_examples_inst.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/ubuntu2402/RV1106/test_for_cmake_install/Install/lib" TYPE SHARED_LIBRARY FILES "/home/ubuntu2402/RV1106/test_for_cmake_install/build/libcmake_examples_inst.so")
-  if(EXISTS "$ENV{DESTDIR}/home/ubuntu2402/RV1106/test_for_cmake_install/Install/lib/libcmake_examples_inst.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/ubuntu2402/RV1106/test_for_cmake_install/Install/lib/libcmake_examples_inst.so")
+  file(INSTALL DESTINATION "/home/ubuntu2402/RV1106/test_for_cmake_install/cmake_install_test/lib" TYPE SHARED_LIBRARY FILES "/home/ubuntu2402/RV1106/test_for_cmake_install/build/libcmake_examples_inst.so")
+  if(EXISTS "$ENV{DESTDIR}/home/ubuntu2402/RV1106/test_for_cmake_install/cmake_install_test/lib/libcmake_examples_inst.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/ubuntu2402/RV1106/test_for_cmake_install/cmake_install_test/lib/libcmake_examples_inst.so")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/home/ubuntu2402/RV1106/luckfox-pico/tools/linux/toolchain/arm-rockchip830-linux-uclibcgnueabihf/bin/arm-rockchip830-linux-uclibcgnueabihf-strip" "$ENV{DESTDIR}/home/ubuntu2402/RV1106/test_for_cmake_install/Install/lib/libcmake_examples_inst.so")
+      execute_process(COMMAND "/home/ubuntu2402/RV1106/luckfox-pico/tools/linux/toolchain/arm-rockchip830-linux-uclibcgnueabihf/bin/arm-rockchip830-linux-uclibcgnueabihf-strip" "$ENV{DESTDIR}/home/ubuntu2402/RV1106/test_for_cmake_install/cmake_install_test/lib/libcmake_examples_inst.so")
     endif()
   endif()
 endif()
@@ -103,14 +103,14 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ubuntu2402/RV1106/test_for_cmake_install/Install/etc/cmake-examples.conf")
+   "/home/ubuntu2402/RV1106/test_for_cmake_install/cmake_install_test/etc/cmake-examples.conf")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/ubuntu2402/RV1106/test_for_cmake_install/Install/etc" TYPE FILE FILES "/home/ubuntu2402/RV1106/test_for_cmake_install/cmake-examples.conf")
+  file(INSTALL DESTINATION "/home/ubuntu2402/RV1106/test_for_cmake_install/cmake_install_test/etc" TYPE FILE FILES "/home/ubuntu2402/RV1106/test_for_cmake_install/cmake-examples.conf")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
