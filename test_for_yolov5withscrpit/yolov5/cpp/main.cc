@@ -44,6 +44,7 @@ int main(int argc, char **argv)
     const char *image_path = argv[2];
 
     int ret;
+    // 初始化 rknn_app_context_t 结构体
     rknn_app_context_t rknn_app_ctx;
     memset(&rknn_app_ctx, 0, sizeof(rknn_app_context_t));
 
@@ -55,7 +56,7 @@ int main(int argc, char **argv)
         printf("init_yolov5_model fail! ret=%d model_path=%s\n", ret, model_path);
         goto out;
     }
-
+    // 初始花 image图像结构体
     image_buffer_t src_image;
     memset(&src_image, 0, sizeof(image_buffer_t));
     ret = read_image(image_path, &src_image);
@@ -77,7 +78,7 @@ int main(int argc, char **argv)
         printf("read image fail! ret=%d image_path=%s\n", ret, image_path);
         goto out;
     }
-
+    // 初始化目标检测结果结构体
     object_detect_result_list od_results;
 
     ret = inference_yolov5_model(&rknn_app_ctx, &src_image, &od_results);
@@ -111,7 +112,7 @@ int main(int argc, char **argv)
 
 out:
     deinit_post_process();
-
+    // 释放模型内存
     ret = release_yolov5_model(&rknn_app_ctx);
     if (ret != 0)
     {
