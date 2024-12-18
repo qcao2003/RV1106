@@ -1,0 +1,1 @@
+/home/ubuntu2402/RV1106/test_only_capture/only_capture/bin/opencv-FPS

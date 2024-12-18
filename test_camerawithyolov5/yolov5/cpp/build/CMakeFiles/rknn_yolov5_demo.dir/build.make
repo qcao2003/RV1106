@@ -128,8 +128,16 @@ rknn_yolov5_demo: utils.out/libimageutils.a
 rknn_yolov5_demo: utils.out/libfileutils.a
 rknn_yolov5_demo: utils.out/libimagedrawing.a
 rknn_yolov5_demo: /home/ubuntu2402/RV1106/test_camerawithyolov5/yolov5/3rdparty/rknpu2/Linux/armhf-uclibc/librknnmrt.so
+rknn_yolov5_demo: /home/ubuntu2402/RV1106/test_camerawithyolov5/yolov5/opencv/lib/libopencv_core.a
+rknn_yolov5_demo: /home/ubuntu2402/RV1106/test_camerawithyolov5/yolov5/opencv/lib/libopencv_features2d.a
+rknn_yolov5_demo: /home/ubuntu2402/RV1106/test_camerawithyolov5/yolov5/opencv/lib/libopencv_highgui.a
+rknn_yolov5_demo: /home/ubuntu2402/RV1106/test_camerawithyolov5/yolov5/opencv/lib/libopencv_imgproc.a
+rknn_yolov5_demo: /home/ubuntu2402/RV1106/test_camerawithyolov5/yolov5/opencv/lib/libopencv_photo.a
+rknn_yolov5_demo: /home/ubuntu2402/RV1106/test_camerawithyolov5/yolov5/opencv/lib/libopencv_video.a
 rknn_yolov5_demo: /home/ubuntu2402/RV1106/test_camerawithyolov5/yolov5/3rdparty/jpeg_turbo/Linux/armhf_uclibc/libturbojpeg.a
 rknn_yolov5_demo: /home/ubuntu2402/RV1106/test_camerawithyolov5/yolov5/3rdparty/librga/Linux/armhf_uclibc/librga.a
+rknn_yolov5_demo: /home/ubuntu2402/RV1106/test_camerawithyolov5/yolov5/opencv/lib/libopencv_imgproc.a
+rknn_yolov5_demo: /home/ubuntu2402/RV1106/test_camerawithyolov5/yolov5/opencv/lib/libopencv_core.a
 rknn_yolov5_demo: CMakeFiles/rknn_yolov5_demo.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ubuntu2402/RV1106/test_camerawithyolov5/yolov5/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable rknn_yolov5_demo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rknn_yolov5_demo.dir/link.txt --verbose=$(VERBOSE)

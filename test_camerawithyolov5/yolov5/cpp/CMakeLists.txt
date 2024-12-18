@@ -9,6 +9,10 @@ if (ENABLE_ASAN)
 	set (CMAKE_LINKER_FLAGS_DEBUG "${CMAKE_LINKER_FLAGS_DEBUG} -fno-omit-frame-pointer -fsanitize=address")
 endif ()
 
+set(OpenCV_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../opencv/lib/cmake/opencv4")
+find_package(OpenCV REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+
 set(rknpu_yolov5_file rknpu2/yolov5.cc)
 
 if (TARGET_SOC STREQUAL "rv1106" OR TARGET_SOC STREQUAL "rv1103")
@@ -41,6 +45,7 @@ target_link_libraries(${PROJECT_NAME}
     imagedrawing    
     ${LIBRKNNRT}
     dl
+    ${OpenCV_LIBS}
 )
 
 if (CMAKE_SYSTEM_NAME STREQUAL "Android")
@@ -60,11 +65,10 @@ target_include_directories(${PROJECT_NAME} PRIVATE
     ${LIBRKNNRT_INCLUDES}
 )
 
+#install
 install(TARGETS ${PROJECT_NAME} DESTINATION .)
 install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/../model/bus.jpg DESTINATION ./model)
 install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/../model/coco_80_labels_list.txt DESTINATION ./model)
-#install(TARGETS ${PROJECT_NAME} DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/.)
-#install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/../model/bus.jpg DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/model)
-#install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/../model/coco_80_labels_list.txt DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/model)
+
 file(GLOB RKNN_FILES "${CMAKE_CURRENT_SOURCE_DIR}/../model/*.rknn")
 install(FILES ${RKNN_FILES} DESTINATION model)
